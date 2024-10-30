@@ -1,0 +1,27 @@
+/* Custom Cursor Effects */
+.cursor.hover {
+    transform: scale(2);
+  }
+  
+  .cursor2.hover {
+    transform: scale(1.5);
+    background-color: rgba(108,99,255,0.1);
+  }
+  
+  /* Transition for hover effects */
+  .cursor, .cursor2 {
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  /* CSS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
